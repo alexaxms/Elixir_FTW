@@ -1,0 +1,13 @@
+<div class=​"​​jumbotron"​> ​
+    <h2>Welcome to Phoenix!</h2>
+    <p class=​"​​lead"​>
+        ​A productive web framework that does ​not​ compromise speed ​and​ maintainability. ​
+    </p> ​
+    <p> ​
+        <%= form_for @conn, Routes.page_path(@conn, :test), fn f -> %>
+          <%= text_input f, :name %>
+          <%= submit "New Game" %>
+        <% end %>
+    </p>
+</div>
+
